@@ -81,13 +81,10 @@
 		7111B12A1A4684DE00FE5D02 /* Plates */ = {
 			isa = PBXGroup;
 			children = (
-				7111B12F1A4684DE00FE5D02 /* AppDelegate.h */,
-				7111B1301A4684DE00FE5D02 /* AppDelegate.m */,
-				7111B1321A4684DE00FE5D02 /* ViewController.h */,
-				7111B1331A4684DE00FE5D02 /* ViewController.m */,
-				7111B1351A4684DE00FE5D02 /* Main.storyboard */,
-				7111B1381A4684DE00FE5D02 /* Images.xcassets */,
-				7111B13A1A4684DE00FE5D02 /* LaunchScreen.xib */,
+				7111B1541A46852000FE5D02 /* helpers */,
+				7111B1511A46850300FE5D02 /* controllers */,
+				7111B1531A46851900FE5D02 /* models */,
+				7111B1521A46850E00FE5D02 /* views */,
 				7111B12B1A4684DE00FE5D02 /* Supporting Files */,
 			);
 			path = Plates;
@@ -96,6 +93,7 @@
 		7111B12B1A4684DE00FE5D02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7111B1381A4684DE00FE5D02 /* Images.xcassets */,
 				7111B12C1A4684DE00FE5D02 /* Info.plist */,
 				7111B12D1A4684DE00FE5D02 /* main.m */,
 			);
@@ -117,6 +115,40 @@
 				7111B1461A4684DE00FE5D02 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7111B1511A46850300FE5D02 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7111B1321A4684DE00FE5D02 /* ViewController.h */,
+				7111B1331A4684DE00FE5D02 /* ViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		7111B1521A46850E00FE5D02 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7111B1351A4684DE00FE5D02 /* Main.storyboard */,
+				7111B13A1A4684DE00FE5D02 /* LaunchScreen.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		7111B1531A46851900FE5D02 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		7111B1541A46852000FE5D02 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7111B12F1A4684DE00FE5D02 /* AppDelegate.h */,
+				7111B1301A4684DE00FE5D02 /* AppDelegate.m */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +200,7 @@
 				TargetAttributes = {
 					7111B1271A4684DE00FE5D02 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 85859FKKHK;
 					};
 					7111B1401A4684DE00FE5D02 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -343,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Plates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Plates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
