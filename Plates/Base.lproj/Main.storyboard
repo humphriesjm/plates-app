@@ -21,15 +21,100 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PICK STATE" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-cd-6J3">
+                                <rect key="frame" x="16" y="189" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PICK COLOR" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Uc-Jg-lg4">
+                                <rect key="frame" x="16" y="269" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2C-Cx-HUe">
+                                <rect key="frame" x="16" y="349" width="343" height="41"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E8w-va-i12"/>
+                                    <segue destination="cyf-27-emq" kind="push" id="8Ly-Wn-VJd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Plates" id="R4U-dl-AXT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="colorField" destination="8Uc-Jg-lg4" id="cBH-hN-Kda"/>
+                        <outlet property="licencePlateField" destination="76b-gv-9iB" id="1b9-aB-RZD"/>
+                        <outlet property="nextButton" destination="W2C-Cx-HUe" id="Qf1-E1-lfv"/>
+                        <outlet property="stateField" destination="QCb-cd-6J3" id="V60-oD-4ne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="683.5" y="310.5"/>
+        </scene>
+        <!--Comment-->
+        <scene sceneID="3ZE-pG-sq0">
+            <objects>
+                <viewController id="cyf-27-emq" customClass="CommentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Jh-Eh-mUB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hbw-9F-wQg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YRS-tt-Lgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-wa-SKd">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plate: ALZ-4846" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSc-jg-iP6">
+                                <rect key="frame" x="16" y="72" width="343" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- or -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq9-HY-ypq">
+                                <rect key="frame" x="168" y="174" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emoticon" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXU-z3-oQp">
+                                <rect key="frame" x="16" y="203" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDZ-jS-Gqk">
+                                <rect key="frame" x="16" y="343" width="343" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAction:" destination="cyf-27-emq" eventType="touchUpInside" id="FHX-zi-Wqw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Comment" id="LRn-ce-5JZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="commentField" destination="buZ-wa-SKd" id="DAX-gm-QxZ"/>
+                        <outlet property="emoticonField" destination="dXU-z3-oQp" id="Cbc-ty-trA"/>
+                        <outlet property="plateLabel" destination="xSc-jg-iP6" id="BKH-fv-1SS"/>
+                        <outlet property="submitButton" destination="sDZ-jS-Gqk" id="Dm9-pV-33f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXt-xt-KF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195.5" y="310.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7vZ-Wu-U5t">
