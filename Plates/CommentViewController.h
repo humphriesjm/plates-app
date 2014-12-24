@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CommentViewController : UIViewController
+@class CommentContext;
 
+@interface CommentViewController : UIViewController
+@property (nonatomic, strong) CommentContext *commentContext;
 @end
